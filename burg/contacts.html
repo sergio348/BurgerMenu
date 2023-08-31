@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>Форма обратной связи</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__wrap">
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <a href="#" class="logo" id="logo">Любарский <br>Сергей</a>
+        <ul class="menu" id="menu">
+          <li><a href="index.html">Бургер</a></li>
+          <li><a href="services.html">Услуги</a></li>
+          <li><a href="prices.html">Калькулятор</a></li>
+          <li><a href="portfolio.html">Слайдер</a></li>
+          <li><a href="clients.html">Клиенты</a></li>
+          <li><a href="contacts.html">Форма обратной связи</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="popup" id="popup"></div>
+
+
+
+  <header class="header">
+    <div class="container">
+      <div class="content">
+        <h1>Форма обратной связи</h1>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="content">
+
+        <div class="form__wrap">
+          <div class="form__title">Свяжитесь с нами</div>
+
+          <form action="php/order.php" class="form form-order" method="POST">
+            <div class="form__list">
+              <fieldset class="form__item">
+                <input type="text" name="username" placeholder="Введите имя*" required minlength="2" maxlength="32"
+                  class="form__inp">
+              </fieldset>
+              <fieldset class="form__item">
+                <input type="email" name="usermail" placeholder="Введите емайл*" required class="form__inp">
+              </fieldset>
+              <fieldset class="form__item">
+                <input type="tel" name="userphone" placeholder="Введите телефон*" required pattern="^\+7[1-9]{10}$"
+                  class="form__inp">
+              </fieldset>
+              <fieldset class="form__item">
+                <input type="text" name="usertelegram" placeholder="Введите телеграм*" required class="form__inp">
+              </fieldset>
+
+              <fieldset class="form__item">
+                <button class="form__btn">отправить</button>
+              </fieldset>
+            </div>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="content">
+        &copy; 2023 Lyubarskiy
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/app.js">
+  </script>
+  <!-- <script src="assets/js/slider.js"> -->
+  <!-- </script> -->
+</body>
+
+</html>
